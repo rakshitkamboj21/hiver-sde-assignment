@@ -1,0 +1,20 @@
+### LLM-as-Judge Calibration
+
+Before using the LLM judge for reply-quality evaluation, we calibrated it against
+8 examples manually reviewed by a human.
+
+| Metric | Result |
+|---|---:|
+| Calibration examples | 8 |
+| Exact score agreement | 25.0% |
+| Agreement within ±1 point | 87.5% |
+| Human mean score | 3.75/5 |
+| LLM judge mean score | 5.00/5 |
+
+The calibration revealed an important limitation: the LLM judge was consistently
+more optimistic than the human reviewer. It assigned 5/5 to all eight examples,
+while the human scores ranged from 2/5 to 5/5.
+
+Therefore, the LLM judge is treated as a supporting evaluation signal rather
+than ground truth. Human review is necessary for calibration and for interpreting
+the automated quality scores.
