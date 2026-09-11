@@ -80,6 +80,7 @@ hiver-sde-assignment/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+---
 
 Setup Requirements
 Python 3.10+
@@ -366,6 +367,7 @@ Therefore, the LLM judge is treated as a supporting evaluation signal rather tha
 
 Human calibration is particularly important for detecting unsupported claims that may sound plausible but are not grounded in the retrieved historical evidence.
 
+---
 
 Failure Analysis
 
@@ -546,6 +548,7 @@ The most important conclusion is therefore not a single accuracy number.
 
 The agent is better characterized as a conservative low-risk support automation system whose safety behavior is stronger than its intent classification accuracy.
 
+---
 
 Decision Log
 Dataset and Evaluation
@@ -625,6 +628,7 @@ The reply-generation and LLM-judge components require a valid Gemini API key in 
 API credentials are not committed to GitHub.
 
 The reply-quality evaluation uses a small calibration set because Gemini API quota limits can affect repeated evaluation runs.
+---
 
 Conclusion
 
